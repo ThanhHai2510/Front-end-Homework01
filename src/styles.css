@@ -1,4 +1,13 @@
 /* Add application styles & imports to this file! */
 body{
+  padding-top: 50px;
+}
+.main{
   padding-top: 30px;
+}
+.detail{
+  color: red;
+  margin: 0 auto;
+  font-size: large;
+  font-weight: bolder;
 }
