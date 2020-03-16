@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { data } from './MockData';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  public products = data;
 }

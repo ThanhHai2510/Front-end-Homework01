@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { product } from '../Product';
 import { data } from '../MockData';
 @Component({
@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
   }
-  products = data;
+  @Input() public products;
   selected: product;
   showDetail(product){
     console.log(product);
