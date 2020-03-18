@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
   }
-  @Input() public products;
+  @Input() products;
   selected: product;
   showDetail(product){
     console.log(product);
