@@ -13,12 +13,14 @@
 					</h4>
 					<h5>${{product.price}}</h5>
 					<p class="card-text">{{product.desc}}</p>
-          <button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
+					<button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
 				</div>
 				<div class="card-footer">
 					<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
 				</div>
 		</div>
 	</div>
-  <div class="detail" *ngIf="selected">{{selected.name}}</div>
+	<div class="detail" *ngIf="selected">
+		<app-product-detail [detail]="selected"></app-product-detail>
+	</div>
 </div>
