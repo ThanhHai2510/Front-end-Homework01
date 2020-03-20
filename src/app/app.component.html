@@ -8,12 +8,12 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home
+					<a class="nav-link" routerLink="/home" active>Home
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" routerLink="/about">About</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Services</a>
@@ -39,8 +39,9 @@
 		<!-- /.col-lg-3 -->
 
 		<div class="col-lg-9 main">
+      <router-outlet></router-outlet>
 			<!-- Add product-management from Produc-management component file -->
-			<app-product-manager></app-product-manager>
+			<!-- <app-product-manager></app-product-manager> -->
       
 
 			<!-- /.row -->
