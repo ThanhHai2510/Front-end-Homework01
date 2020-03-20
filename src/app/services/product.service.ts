@@ -16,4 +16,9 @@ export class ProductService {
     console.log('removeProduct');
     return this.products = this.products.filter(product => product.name != name);
   }
+  addProduct(product){
+    let newObj = {...product};
+    this.products.push(newObj);
+    console.log(newObj);
+  }
 }

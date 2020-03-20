@@ -11,10 +11,11 @@ import { SliderComponent } from './slider/slider.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductService } from './services/product.service';
+import { ProductAddComponent } from './product-add/product-add.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, CategoryComponent, ProductComponent, SliderComponent, ProductManagerComponent, ProductDetailComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, CategoryComponent, ProductComponent, SliderComponent, ProductManagerComponent, ProductDetailComponent, ProductAddComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
