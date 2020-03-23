@@ -21,4 +21,8 @@ export class ProductService {
     this.products.push(newObj);
     console.log(newObj);
   }
+  getProduct(name){
+    return this.products.find(product => product.name == name);
+    console.log(this.products);
+  }
 }
