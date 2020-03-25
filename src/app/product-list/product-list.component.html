@@ -1,27 +1,25 @@
-<app-slider></app-slider>
 <div class="row">
-	<!-- Add product form Product component file -->
-	<!-- <app-product class="col-lg-4 col-md-6 mb-4"></app-product>
-<app-product class="col-lg-4 col-md-6 mb-4"></app-product>
-<app-product class="col-lg-4 col-md-6 mb-4"></app-product>
-<app-product class="col-lg-4 col-md-6 mb-4"></app-product> -->
-	<div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
-		<div class="card h-100">
-			<a href="#"><img class="card-img-top" src="https://dummyimage.com/700x400/2c3e50/fff" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">{{product.name}}</a>
-					</h4>
-					<h5>${{product.price}}</h5>
-					<p class="card-text">{{product.desc}}</p>
-					<button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
+	<div class="col-lg-3">
+		<app-category></app-category>
+	</div>
+	<div class="col-lg-9 main">
+		<app-slider></app-slider>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+				<div class="card h-100">
+					<a href="#"><img class="card-img-top" src="https://dummyimage.com/700x400/2c3e50/fff" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">{{product.name}}</a>
+							</h4>
+							<h5>${{product.price}}</h5>
+							<p class="card-text">{{product.desc}}</p>
+							<button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+						</div>
 				</div>
-				<div class="card-footer">
-					<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-				</div>
+			</div>
 		</div>
 	</div>
-	<!-- <div class="detail" *ngIf="selected">
-		<app-product-detail [detail]="selected"></app-product-detail>
-	</div>
-</div> -->
